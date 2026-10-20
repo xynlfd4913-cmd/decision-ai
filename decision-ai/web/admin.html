@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>决策AI后台管理</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <header class="admin-header">
+        <div>
+          <h1>决策AI后台管理</h1>
+          <p>审核用户充值申请，通过后用户可在前台查询并开通权益。</p>
+        </div>
+        <a class="admin-link" href="./index.html">返回前台</a>
+      </header>
+
+      <section class="admin-login">
+        <label class="field">
+          <span>管理员口令</span>
+          <input id="adminToken" type="password" placeholder="输入 ADMIN_TOKEN" />
+        </label>
+        <button id="loadRequestsBtn" class="primary-btn" type="button">加载充值申请</button>
+        <p id="adminHint" class="hint">后台口令只保存在当前浏览器，不会展示给普通用户。</p>
+      </section>
+
+      <section class="admin-panel">
+        <div class="admin-table-head">
+          <h2>充值申请</h2>
+          <button id="refreshRequestsBtn" class="secondary-btn" type="button">刷新</button>
+        </div>
+        <div id="requestList" class="request-list">
+          <div class="request-empty">请输入管理员口令后加载。</div>
+        </div>
+      </section>
+    </main>
+    <div id="toast" class="toast hidden">已完成</div>
+    <script src="./admin.js"></script>
+  </body>
+</html>

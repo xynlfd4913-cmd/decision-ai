@@ -1,0 +1,222 @@
+{
+  "project": "decision-ai",
+  "organizedOn": "2026-10-20",
+  "excludes": [
+    "API credentials",
+    "local admin tokens",
+    ".vercel",
+    "dependency caches"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 181,
+      "sha256": "329485bea92f3f9d624ffd46cb0afd5fd100791e035051216d94b522a5ff0a90"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 192,
+      "sha256": "75254724334ee1854dc56f86c0ebad8b1c81793d713c578c987f8e4b261a96bf"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2293,
+      "sha256": "d41f94e2ccff62de41154d70afe0a605216a455fbaa5ef7de79d708470ccf450"
+    },
+    {
+      "path": "decision-ai/archive/README.md",
+      "bytes": 264,
+      "sha256": "80cd6d82a34cb90284c628a45b952ad758686385f0aa4c42932962371ab83ff6"
+    },
+    {
+      "path": "decision-ai/archive/thread-test-memory.json",
+      "bytes": 3261,
+      "sha256": "2415fefc96a173e00badd9329cbecd7396f7d505886bf638a4345a8b9e9fd135"
+    },
+    {
+      "path": "decision-ai/docs/deployment.md",
+      "bytes": 1956,
+      "sha256": "b303a16b97a1a4620782d75de2d186172116968a5a3b3932a17bcad8a111ab83"
+    },
+    {
+      "path": "decision-ai/docs/product-blueprint.md",
+      "bytes": 6410,
+      "sha256": "043fe69a8b1a940610d4dd4f56e614483764542320bfbc89b68010402d0deae3"
+    },
+    {
+      "path": "decision-ai/docs/project-status.md",
+      "bytes": 2840,
+      "sha256": "298d9b6c632668b412f73918878b406086c4c6cc66a53edbf417d04e82249a9b"
+    },
+    {
+      "path": "decision-ai/docs/prompt-templates.md",
+      "bytes": 3493,
+      "sha256": "e3c229a1ec66d79c88f0dc352297ed7ec7ab3d9e7741bef933d23df16a097cd3"
+    },
+    {
+      "path": "decision-ai/research/eam-private-ai/LICENSE",
+      "bytes": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    },
+    {
+      "path": "decision-ai/research/eam-private-ai/README.md",
+      "bytes": 2228,
+      "sha256": "c39c79c96e26373fc60f2897decf75eb32163d1afa5f5a4a8fc1680674b86d0c"
+    },
+    {
+      "path": "decision-ai/research/eam-private-ai/eam_model.py",
+      "bytes": 25132,
+      "sha256": "b0d1d38a97b4e96ff259daeeb922661943e0d83f363f36c8b411f2d71a51f43f"
+    },
+    {
+      "path": "decision-ai/research/eam-private-ai/output.txt",
+      "bytes": 3108,
+      "sha256": "708ee909e354ce2de413caf9cdb67a5597162a058984db97be56193f7740c776"
+    },
+    {
+      "path": "decision-ai/research/eam-private-ai/test_memory.json",
+      "bytes": 3261,
+      "sha256": "2415fefc96a173e00badd9329cbecd7396f7d505886bf638a4345a8b9e9fd135"
+    },
+    {
+      "path": "decision-ai/web/.env.example",
+      "bytes": 295,
+      "sha256": "3280cb0594ffeaef1d209e317649ef76bebc879965a704e4a93ec9de89ebb841"
+    },
+    {
+      "path": "decision-ai/web/.gitignore",
+      "bytes": 98,
+      "sha256": "92a9ec37365c5520ec2a814e3cdbb3d65e532d4489df04ffcc3973cb2e46d0f0"
+    },
+    {
+      "path": "decision-ai/web/.vercelignore",
+      "bytes": 62,
+      "sha256": "70828502e543169a73229e6e108cd0133f7ece02b018fab460dbf357fbaf3702"
+    },
+    {
+      "path": "decision-ai/web/README.md",
+      "bytes": 1848,
+      "sha256": "9a9a0e0854725537223f0a7dd22e55d62772e081c465cefa16bda2b8e503ee78"
+    },
+    {
+      "path": "decision-ai/web/admin.html",
+      "bytes": 1593,
+      "sha256": "f9089e9d240e1cc945aa30a2c9541a162869225ed2cdba6ccb4b013ac5f46b2b"
+    },
+    {
+      "path": "decision-ai/web/admin.js",
+      "bytes": 3956,
+      "sha256": "feeeea4da995d512105c9a2b1887765cc33bab8c3d25dbfc5b5c57b5a2637b14"
+    },
+    {
+      "path": "decision-ai/web/api/admin/list-recharges.js",
+      "bytes": 910,
+      "sha256": "49e69a42e86d0eb76486ecf9ab3d2d7835eccb3bab52d7a9106bf40c00608ad9"
+    },
+    {
+      "path": "decision-ai/web/api/admin/review-recharge.js",
+      "bytes": 1179,
+      "sha256": "28cf418ab238dcd966083ef312bfe5958ac92088707732e55e9a43f02c507438"
+    },
+    {
+      "path": "decision-ai/web/api/analyze.js",
+      "bytes": 5036,
+      "sha256": "ee0be7d315c6adb2699f0f5e7a6a760f159172aa6aee46c955573c1c1d23360d"
+    },
+    {
+      "path": "decision-ai/web/api/auth/send-code.js",
+      "bytes": 1046,
+      "sha256": "293bc81525bae4e122ff58eff2315783b39f982677c5ffe12bd09ed2caffda29"
+    },
+    {
+      "path": "decision-ai/web/api/auth/verify-code.js",
+      "bytes": 1078,
+      "sha256": "0ff69216cd836675cd454b988366014b8080d1087b4ae53a748f59d473cff0c2"
+    },
+    {
+      "path": "decision-ai/web/api/recharge/request.js",
+      "bytes": 1332,
+      "sha256": "cd7c308fa0ec6907efd77308d474b542b4f9f67207fcd990dc6c43a1280696b2"
+    },
+    {
+      "path": "decision-ai/web/api/recharge/status.js",
+      "bytes": 1405,
+      "sha256": "44f0f3a7bd98d17992b70870bfd2881ea3e08f34c491f4934a6d4a8d0f693370"
+    },
+    {
+      "path": "decision-ai/web/app.js",
+      "bytes": 16737,
+      "sha256": "3577b55fed96afdb959adb46185a4b3896c54672ec7947db20aebf23421e3ab5"
+    },
+    {
+      "path": "decision-ai/web/assets/admin-wechat.jpg",
+      "bytes": 102738,
+      "sha256": "4c1e448d29ec2b760365322d928ae256acf3120983c5741bf2e2a282786a02c7"
+    },
+    {
+      "path": "decision-ai/web/assets/wechat-pay.jpg",
+      "bytes": 147794,
+      "sha256": "bcc208071b99ea48d1c7e2f13d179e3002f920e64f19bdd898ca988bc587ebef"
+    },
+    {
+      "path": "decision-ai/web/index.html",
+      "bytes": 6819,
+      "sha256": "9e445ed2179a9af2856e61cca3ae88e4536ac86411d6c57a0faac39c4e935c4a"
+    },
+    {
+      "path": "decision-ai/web/lib/admin-auth.js",
+      "bytes": 448,
+      "sha256": "f2123ff8673fb20f9a3a388d10683a6cc06b2eec1d008e0984c6d1d266fdea77"
+    },
+    {
+      "path": "decision-ai/web/lib/auth-code-utils.js",
+      "bytes": 2816,
+      "sha256": "f123c1b4ebda43f9adca45eeb9d34eb2e7b41c8d33f84b1d42dbcacc08209f56"
+    },
+    {
+      "path": "decision-ai/web/lib/plans.js",
+      "bytes": 558,
+      "sha256": "360123743bb015c702b48f7f21930acaedf39fb504d0fbc965beb4dee7d131f6"
+    },
+    {
+      "path": "decision-ai/web/lib/redis.js",
+      "bytes": 739,
+      "sha256": "2ce673a4b4225d7220189f340fe64ee2521d314d5cb13aa0f5cb86a11d491f3c"
+    },
+    {
+      "path": "decision-ai/web/package.json",
+      "bytes": 254,
+      "sha256": "f40681c2586db7db2e35378ad47ceadf87b632287f22e8a7de1da5b2a5627728"
+    },
+    {
+      "path": "decision-ai/web/robots.txt",
+      "bytes": 118,
+      "sha256": "ca936b824ce03cb990423a273a0dbf4a6952e44d87071831ffb449ed30ab9754"
+    },
+    {
+      "path": "decision-ai/web/sitemap.xml",
+      "bytes": 277,
+      "sha256": "f2e94affd25f41a0b30737711fe14eace8b71ce53822d16cb66cd6b322c7d26a"
+    },
+    {
+      "path": "decision-ai/web/styles.css",
+      "bytes": 12187,
+      "sha256": "07d9ea2421d7df56f8890de505a483a1b4d7f2f1aae05a3b2b261bbb5a431fd8"
+    },
+    {
+      "path": "decision-ai/web/tests/api-analyze.test.mjs",
+      "bytes": 1428,
+      "sha256": "1e1e0fba812aaf58cf0c0918c630c568df038bda44c9ee4e0cb23d9dff9cccfc"
+    },
+    {
+      "path": "decision-ai/web/tests/auth-code.test.mjs",
+      "bytes": 2019,
+      "sha256": "be1f45d54384820881873911875aef15a3f8ffe16facf7b83a3b463a762a5767"
+    },
+    {
+      "path": "decision-ai/web/vercel.json",
+      "bytes": 108,
+      "sha256": "4436f4ce1e46b77db6248579233f7d8436eaa8329407a0894cc2a842afc22ced"
+    }
+  ]
+}

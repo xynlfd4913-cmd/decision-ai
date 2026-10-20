@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>决策AI - 理性脑与感性脑双脑决策分析工具</title>
+    <meta name="description" content="决策AI帮助你分析辞职、分手、换城市等人生选择，提供理性脑、感性脑和下一步行动卡。未登录可免费体验3次。" />
+    <meta name="keywords" content="决策AI,AI决策,职业决策,情感决策,人生选择,辞职分析,分手分析,DeepSeek" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://dualmind-ai-mvp.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="决策AI - 双脑决策分析工具" />
+    <meta property="og:description" content="输入纠结的问题，获得理性脑、感性脑和下一步行动卡。" />
+    <meta property="og:url" content="https://dualmind-ai-mvp.vercel.app/" />
+    <meta property="og:site_name" content="决策AI" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "决策AI",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Web",
+        "description": "AI双脑决策分析工具，帮助用户获得理性、感性和行动建议。",
+        "url": "https://dualmind-ai-mvp.vercel.app/",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">决</div>
+          <div>
+            <div class="brand-name">决策AI</div>
+            <div class="brand-subtitle">理性脑 + 感性脑</div>
+          </div>
+        </div>
+
+        <button id="newChatBtn" class="new-chat-btn" type="button">新建决策</button>
+
+        <nav class="history-nav" aria-label="历史决策">
+          <div class="nav-title">历史记录</div>
+          <input id="historySearch" class="history-search" placeholder="搜索历史问题..." />
+          <div id="historyList" class="history-list"></div>
+        </nav>
+
+        <div class="account-box">
+          <div>
+            <strong id="accountName">访客用户</strong>
+            <span id="accountId">未登录也可免费体验</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-topbar">
+          <div>
+            <h1>决策AI</h1>
+            <p>输入一个纠结的问题，获得理性脑、感性脑和行动卡。</p>
+          </div>
+          <div class="topbar-actions">
+            <div class="usage-pill">
+              <span>今日免费</span>
+              <strong id="usageText">3 / 3</strong>
+            </div>
+            <button id="openAuthBtn" class="login-btn" type="button">登录 / 注册</button>
+            <button id="logoutBtn" class="login-btn hidden" type="button">退出</button>
+          </div>
+        </header>
+
+        <section id="chatMessages" class="chat-messages" aria-live="polite">
+          <article class="message assistant">
+            <div class="avatar">决</div>
+            <div class="message-body">
+              <h2>今天想分析哪个选择？</h2>
+              <p>你可以直接免费体验 3 次。登录后可保存账号状态，也可以随时退出。</p>
+              <div class="quick-prompts">
+                <button class="quick-prompt" data-scene="career" type="button">我要不要辞职？</button>
+                <button class="quick-prompt" data-scene="relationship" type="button">我要不要分手？</button>
+                <button class="quick-prompt" data-scene="life" type="button">我要不要换城市？</button>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <form id="composerForm" class="composer">
+          <div class="composer-options">
+            <select id="sceneSelect" aria-label="决策场景">
+              <option value="career">职业决策</option>
+              <option value="relationship">情感决策</option>
+              <option value="life">人生选择</option>
+            </select>
+            <select id="depthSelect" aria-label="分析深度">
+              <option value="basic">基础分析</option>
+              <option value="deep">深度分析</option>
+            </select>
+          </div>
+          <div class="composer-input">
+            <textarea id="questionInput" rows="1" maxlength="500" placeholder="输入你的决策问题..."></textarea>
+            <button id="sendBtn" class="send-btn" type="submit" aria-label="发送">发送</button>
+          </div>
+          <p id="inputHint" class="composer-hint">未登录也可免费体验 3 次。Enter 发送，Shift + Enter 换行。</p>
+        </form>
+      </main>
+    </div>
+
+    <div id="authModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <section class="auth-card">
+        <button id="closeAuthBtn" class="close-btn" type="button" aria-label="关闭">×</button>
+        <div class="logo">决</div>
+        <h1 id="authTitle">注册 / 登录决策AI</h1>
+        <p>用邮箱或手机号创建账号。验证码由真实邮箱/短信服务发送。</p>
+        <div class="auth-tabs" role="tablist" aria-label="账号方式">
+          <button class="auth-tab active" data-auth-mode="email" type="button">邮箱</button>
+          <button class="auth-tab" data-auth-mode="phone" type="button">手机号</button>
+        </div>
+        <label id="accountLabel" class="field">
+          <span>邮箱地址</span>
+          <input id="accountInput" autocomplete="username" placeholder="name@example.com" />
+        </label>
+        <label class="field">
+          <span>昵称</span>
+          <input id="nameInput" autocomplete="name" placeholder="你的昵称" />
+        </label>
+        <label class="field">
+          <span>验证码</span>
+          <div class="code-row">
+            <input id="codeInput" autocomplete="one-time-code" placeholder="6 位验证码" />
+            <button id="sendCodeBtn" class="secondary-btn" type="button">发送验证码</button>
+          </div>
+        </label>
+        <button id="loginBtn" class="primary-btn" type="button">进入决策AI</button>
+        <p id="authHint" class="hint">请输入邮箱或手机号，接收验证码后登录。</p>
+      </section>
+    </div>
+
+    <div id="toast" class="toast hidden">已完成</div>
+    <script src="./app.js"></script>
+  </body>
+</html>

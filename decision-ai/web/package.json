@@ -1,0 +1,13 @@
+{
+  "name": "decision-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/api-analyze.test.mjs && node tests/auth-code.test.mjs",
+    "start": "vercel dev"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

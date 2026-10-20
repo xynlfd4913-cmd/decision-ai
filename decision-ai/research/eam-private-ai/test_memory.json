@@ -1,0 +1,158 @@
+{
+  "short": [
+    {
+      "input_str": "输入5",
+      "target_str": "输出5",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入6",
+      "target_str": "输出6",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入7",
+      "target_str": "输出7",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入8",
+      "target_str": "输出8",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入9",
+      "target_str": "输出9",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入10",
+      "target_str": "输出10",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入11",
+      "target_str": "输出11",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入12",
+      "target_str": "输出12",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入13",
+      "target_str": "输出13",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入14",
+      "target_str": "输出14",
+      "weight_factor": 1.0
+    }
+  ],
+  "long": [
+    {
+      "input_str": "输入0",
+      "target_str": "输出0",
+      "weight_factor": 0.4
+    },
+    {
+      "input_str": "输入1",
+      "target_str": "输出1",
+      "weight_factor": 0.4
+    },
+    {
+      "input_str": "输入2",
+      "target_str": "输出2",
+      "weight_factor": 0.4
+    },
+    {
+      "input_str": "输入3",
+      "target_str": "输出3",
+      "weight_factor": 0.4
+    },
+    {
+      "input_str": "输入4",
+      "target_str": "输出4",
+      "weight_factor": 0.4
+    }
+  ],
+  "dataset": [
+    {
+      "input_str": "输入0",
+      "target_str": "输出0",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入1",
+      "target_str": "输出1",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入2",
+      "target_str": "输出2",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入3",
+      "target_str": "输出3",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入4",
+      "target_str": "输出4",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入5",
+      "target_str": "输出5",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入6",
+      "target_str": "输出6",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入7",
+      "target_str": "输出7",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入8",
+      "target_str": "输出8",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入9",
+      "target_str": "输出9",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入10",
+      "target_str": "输出10",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入11",
+      "target_str": "输出11",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入12",
+      "target_str": "输出12",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入13",
+      "target_str": "输出13",
+      "weight_factor": 1.0
+    },
+    {
+      "input_str": "输入14",
+      "target_str": "输出14",
+      "weight_factor": 1.0
+    }
+  ]
+}

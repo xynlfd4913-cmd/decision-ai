@@ -1,0 +1,4 @@
+.env
+.env.local
+.admin-token.local.txt
+.auth-secret.local.txt
